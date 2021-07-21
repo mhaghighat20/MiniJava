@@ -40,7 +40,7 @@ public class Parser {
     cg = new CodeGenerator();
   }
 
-  public void startParse(java.util.Scanner sc) {
+  public ArrayList<String> startParse(java.util.Scanner sc) {
     lexicalAnalyzer = new lexicalAnalyzer(sc);
     Token lookAhead = lexicalAnalyzer.getNextToken();
     boolean finish = false;
@@ -105,7 +105,9 @@ public class Parser {
 
     }
     if (!ErrorHandler.hasError)
-      cg.printMemory();
+      return cg.printMemory();
+    else
+      return ErrorHandler.errors;
 
 
   }

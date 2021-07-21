@@ -7,6 +7,7 @@ import semantic.symbol.Symbol;
 import semantic.symbol.SymbolTable;
 import semantic.symbol.SymbolType;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 /**
@@ -23,9 +24,9 @@ public class CodeGenerator {
         symbolTable = new SymbolTable(memory);
         //TODO
     }
-    public void printMemory()
+    public ArrayList<String> printMemory()
     {
-        memory.pintCodeBlock();
+        return memory.pintCodeBlock();
     }
     public void semanticFunction(int func, Token next) {
         Log.print("codegenerator : " + func);

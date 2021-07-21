@@ -47,11 +47,15 @@ public class Memory {
         return codeBlock.size();
     }
 
-    public void pintCodeBlock() {
-        System.out.println("Code Block");
+    public ArrayList<String> pintCodeBlock() {
+        ArrayList<String> result
+                = new ArrayList<>();
+
         for (int i = 0; i < codeBlock.size(); i++) {
-            System.out.println(i + " : " + codeBlock.get(i).toString());
+            result.add(i + " : " + codeBlock.get(i).toString());
         }
+
+        return result;
     }
 }
 
