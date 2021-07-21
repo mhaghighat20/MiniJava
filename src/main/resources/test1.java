@@ -7,11 +7,9 @@ class H90 {
         k = 2;
         c = 0;
         while (c < 10) {
-            d = d + k;
             k = d * c;
-            c = c + 1;
-            if (c == d && k < c) {
-                c = c + 1;
+            if (k < c) {
+                c = c * 1;
             } else {
                 System.out.println(k);
             }
@@ -45,7 +43,7 @@ class iV {
 
     public static int G(int aM) {
         int M2;
-        return 2 - 3 - 7 * (4) + 9 * 2 * 3 - 5;
+        return 2 * 3 * 7 * (4) * 5;
     }
 }
 

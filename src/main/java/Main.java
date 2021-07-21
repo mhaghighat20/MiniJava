@@ -11,7 +11,7 @@ public class Main {
     Parser parser = new Parser();
     try {
       // start parsing
-      ArrayList<String> result = parser.startParse(new Scanner(new File("src/main/resources/test2.java")));
+      ArrayList<String> result = parser.startParse(new Scanner(new File("src/main/resources/test1.java")));
 
       for (String item :
               result) {
